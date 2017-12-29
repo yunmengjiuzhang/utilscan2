@@ -24,4 +24,4 @@ android 扫码，扫描二维码，扫描条形码.秒射,两个扫码两个机�
 
 如果需要进一步交流，邮件哦：xuanyuanxixi@foxmail.com
 
-](https://jitpack.io/#wangfeixixi/utilscan1)
+[![](https://jitpack.io/v/wangfeixixi/utilscan2.svg)](https://jitpack.io/#wangfeixixi/utilscan2)
