@@ -59,7 +59,6 @@ public abstract class BaseCaptureActivity extends SwipeBackActivity implements S
     private boolean hasSurface;
 
     public CameraManager cameraManager;
-    private BeepManager beepManager;
     private CaptureActivityHandler handler;
     private ViewfinderView viewfinderView;
     private Collection<BarcodeFormat> decodeFormats;
@@ -86,8 +85,6 @@ public abstract class BaseCaptureActivity extends SwipeBackActivity implements S
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         hasSurface = false;
-        beepManager = new BeepManager(this);
-
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         } else {
@@ -108,8 +105,6 @@ public abstract class BaseCaptureActivity extends SwipeBackActivity implements S
         Intent intent = getIntent();
         decodeFormats = null;
         characterSet = null;
-
-        beepManager.updatePrefs();
 
         if (intent != null) {
             String action = intent.getAction();
@@ -159,7 +154,6 @@ public abstract class BaseCaptureActivity extends SwipeBackActivity implements S
             handler = null;
         }
         cameraManager.closeDriver();
-        beepManager.close();
         if (!hasSurface) {
             SurfaceView surfaceView = getSurfaceView();
             if (surfaceView == null) {
@@ -345,25 +339,6 @@ public abstract class BaseCaptureActivity extends SwipeBackActivity implements S
         if (viewfinderView != null) {
             viewfinderView.drawViewfinder();
         }
-    }
-
-    /**
-     * 播放声音，执行振动
-     */
-    public void playBeepSoundAndVibrate() {
-        playBeepSoundAndVibrate(true, true);
-    }
-
-    /**
-     * 播放声音，执行振动
-     *
-     * @param playBeep
-     * @param vibrate
-     */
-    public void playBeepSoundAndVibrate(boolean playBeep, boolean vibrate) {
-        if (beepManager == null)
-            return;
-        beepManager.playBeepSoundAndVibrate(playBeep, vibrate);
     }
 
     /**

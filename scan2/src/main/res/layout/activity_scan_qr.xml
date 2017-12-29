@@ -4,7 +4,7 @@
     android:id="@+id/activity_wechat_capture"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScanQRActivity">
+    tools:context=".Scan2Activity">
 
     <SurfaceView
         android:id="@+id/preview_view"
