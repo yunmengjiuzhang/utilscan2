@@ -1,6 +1,5 @@
 package wangfei.scan2;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,8 +14,6 @@ public abstract class Scan2Activity extends BaseCaptureActivity {
 
     private SurfaceView surfaceView;
     private AutoScannerView autoScannerView;
-    private Activity mCtx;
-
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override

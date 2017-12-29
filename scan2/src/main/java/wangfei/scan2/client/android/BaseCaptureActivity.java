@@ -27,12 +27,11 @@ import wangfei.scan2.globla.DecodeHintType;
 import wangfei.scan2.globla.Result;
 import wangfei.scan2.globla.ResultPoint;
 import wangfei.scan2.client.android.camera.CameraManager;
+import wangfei.swipeback.SwipeBackActivity;
 
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Map;
-
-import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 
 
 public abstract class BaseCaptureActivity extends SwipeBackActivity implements SurfaceHolder.Callback {
