@@ -1,0 +1,4 @@
+<resources>
+    <string name="title_activity_scan_test">ScanTestActivity</string>
+    <string name="title_activity_qrlogin">QRLoginActivity</string>
+</resources>
