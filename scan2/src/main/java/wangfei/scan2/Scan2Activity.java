@@ -11,7 +11,7 @@ import wangfei.scan2.client.android.AutoScannerView;
 import wangfei.scan2.client.android.BaseCaptureActivity;
 import wangfei.scan2.globla.Result;
 
-public abstract class SampleActivity extends BaseCaptureActivity {
+public abstract class Scan2Activity extends BaseCaptureActivity {
 
     private SurfaceView surfaceView;
     private AutoScannerView autoScannerView;
