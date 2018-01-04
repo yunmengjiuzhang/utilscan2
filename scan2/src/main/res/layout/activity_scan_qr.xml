@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_wechat_capture"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Scan2Activity">
 
 
-    <SurfaceView
-        android:id="@+id/preview_view"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+    <!--<SurfaceView-->
+        <!--android:id="@+id/preview_view"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent" />-->
 
-    <wangfei.scan2.client.android.AutoScannerView
-        android:id="@+id/autoscanner_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <!--<wangfei.scan2.client.android.AutoScannerView-->
+        <!--android:id="@+id/autoscanner_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
 
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="32dp"
-        android:background="@drawable/scan_back" />
+    <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:background="@drawable/scan_back" />-->
 </RelativeLayout>

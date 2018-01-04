@@ -11,23 +11,28 @@ import wangfei.scan2.globla.Result;
 
 public abstract class Scan2Activity extends BaseCaptureActivity {
 
-    private SurfaceView surfaceView;
-    private AutoScannerView autoScannerView;
+//    private AutoScannerView autoScannerView;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scan_qr);
-        surfaceView = (SurfaceView) findViewById(R.id.preview_view);
-        autoScannerView = (AutoScannerView) findViewById(R.id.autoscanner_view);
+        initView();
+//        setContentView(R.layout.activity_scan_qr);
+//        surfaceView = (SurfaceView) findViewById(R.id.preview_view);
+//        autoScannerView = (AutoScannerView) findViewById(R.id.autoscanner_view);
     }
+
+    protected abstract void initView();
 
     @Override
     protected void onResume() {
         super.onResume();
-        autoScannerView.setCameraManager(cameraManager);
+//        autoScannerView.setCameraManager(cameraManager);
+        getAutoScannerView().setCameraManager(cameraManager);
     }
+
+    protected abstract AutoScannerView getAutoScannerView();
 
     @Override
     protected void onPause() {
@@ -35,9 +40,7 @@ public abstract class Scan2Activity extends BaseCaptureActivity {
     }
 
     @Override
-    public SurfaceView getSurfaceView() {
-        return (surfaceView == null) ? (SurfaceView) findViewById(R.id.preview_view) : surfaceView;
-    }
+    public abstract SurfaceView getSurfaceView();
 
     @Override
     public void dealDecode(Result rawResult, Bitmap barcode, float scaleFactor) {

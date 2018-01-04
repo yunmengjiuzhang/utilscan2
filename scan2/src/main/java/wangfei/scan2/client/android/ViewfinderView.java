@@ -18,7 +18,6 @@ package wangfei.scan2.client.android;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -27,12 +26,11 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
-import wangfei.scan2.R;
-import wangfei.scan2.globla.ResultPoint;
-import wangfei.scan2.client.android.camera.CameraManager;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import wangfei.scan2.client.android.camera.CameraManager;
+import wangfei.scan2.globla.ResultPoint;
 
 
 /**
