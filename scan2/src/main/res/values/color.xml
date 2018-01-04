@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <color name="viewfinder_mask">#60000000</color>
-     <color name="result_view">#b0000000</color>
-    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
-    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
-    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <!--<color name="viewfinder_mask">#60000000</color>-->
+     <!--<color name="result_view">#b0000000</color>-->
+    <!--<color name="viewfinder_laser">#ffcc0000</color> &lt;!&ndash; Android standard ICS color &ndash;&gt;-->
+    <!--<color name="possible_result_points">#c0ffbd21</color> &lt;!&ndash; Android standard ICS color &ndash;&gt;-->
+    <!--<color name="result_points">#c099cc00</color> &lt;!&ndash; Android standard ICS color &ndash;&gt;-->
 </resources>
