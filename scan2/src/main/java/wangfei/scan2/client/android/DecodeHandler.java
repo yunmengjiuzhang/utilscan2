@@ -23,6 +23,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 
+import wangfei.scan2.BaseCaptureActivity;
 import wangfei.scan2.globla.BinaryBitmap;
 import wangfei.scan2.globla.DecodeHintType;
 import wangfei.scan2.globla.MultiFormatReader;

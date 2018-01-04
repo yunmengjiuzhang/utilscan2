@@ -1,4 +1,4 @@
-package wangfei.scan2.client.android;
+package wangfei.scan2;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -21,7 +21,13 @@ import android.view.SurfaceView;
 import android.view.Window;
 import android.view.WindowManager;
 
-import wangfei.scan2.R;
+import wangfei.scan2.client.android.CaptureActivityHandler;
+import wangfei.scan2.client.android.DecodeFormatManager;
+import wangfei.scan2.client.android.DecodeHintManager;
+import wangfei.scan2.client.android.Ids;
+import wangfei.scan2.client.android.IntentSource;
+import wangfei.scan2.client.android.Intents;
+import wangfei.scan2.client.android.ViewfinderView;
 import wangfei.scan2.globla.BarcodeFormat;
 import wangfei.scan2.globla.DecodeHintType;
 import wangfei.scan2.globla.Result;

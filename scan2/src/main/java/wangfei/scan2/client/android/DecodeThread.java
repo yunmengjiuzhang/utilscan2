@@ -22,6 +22,7 @@ import android.os.Looper;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import wangfei.scan2.BaseCaptureActivity;
 import wangfei.scan2.globla.BarcodeFormat;
 import wangfei.scan2.globla.DecodeHintType;
 import wangfei.scan2.globla.ResultPointCallback;

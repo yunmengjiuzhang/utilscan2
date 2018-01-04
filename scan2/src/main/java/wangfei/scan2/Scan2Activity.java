@@ -7,7 +7,6 @@ import android.support.annotation.RequiresApi;
 import android.view.SurfaceView;
 
 import wangfei.scan2.client.android.AutoScannerView;
-import wangfei.scan2.client.android.BaseCaptureActivity;
 import wangfei.scan2.globla.Result;
 
 public abstract class Scan2Activity extends BaseCaptureActivity {

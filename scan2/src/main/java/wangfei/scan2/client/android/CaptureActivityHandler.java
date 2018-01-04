@@ -32,6 +32,7 @@ import android.os.Message;
 import android.provider.Browser;
 import android.util.Log;
 
+import wangfei.scan2.BaseCaptureActivity;
 import wangfei.scan2.globla.BarcodeFormat;
 import wangfei.scan2.globla.DecodeHintType;
 import wangfei.scan2.globla.Result;
